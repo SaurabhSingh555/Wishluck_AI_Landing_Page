@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.local
+.env.*.local
+*.log
+data/
+frontend/dist/
+.next/
+build/
+dist/
+.DS_Store
+.vscode/
+.idea/
+coverage/
+tests/artifacts/screenshots/
+*.pem
+*.key

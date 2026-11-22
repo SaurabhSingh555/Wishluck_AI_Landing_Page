@@ -1,0 +1,560 @@
+[
+  {
+    "url": "https://www.boat-lifestyle.com/products/boat-partypal-800",
+    "runId": "d93cdced-bbce-46e0-8821-eda5e035258f",
+    "category": "partypal",
+    "status": "completed",
+    "variants": 1,
+    "competitorsDiscovered": 9,
+    "competitorsAnalyzed": 9,
+    "designs": [
+      {
+        "id": "385b6d65-4234-4660-be75-07f00fde4bca",
+        "label": "Design A — Story-led",
+        "novelty": 100,
+        "hero": "split-editorial",
+        "seq": [
+          "hero",
+          "story",
+          "gallery",
+          "specs",
+          "faq",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 92,
+          "seo": 97,
+          "overall": 96
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "a6293516-b002-40c1-8049-f6352cbed179",
+        "label": "Design B — Benefit-first",
+        "novelty": 64.4,
+        "hero": "compact-left-gallery",
+        "seq": [
+          "hero",
+          "specs",
+          "faq",
+          "gallery",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 93,
+          "seo": 100,
+          "overall": 98
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "023ee8ee-fa57-4180-8d42-aa351cc23e43",
+        "label": "Design C — Social-proof-led",
+        "novelty": 56.6,
+        "hero": "split-proof-strip",
+        "seq": [
+          "hero",
+          "gallery",
+          "specs",
+          "faq",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 92,
+          "seo": 100,
+          "overall": 97
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "a415e81f-a4cf-4cdc-9138-ad680c18f2b0",
+        "label": "Design D — Offer-led",
+        "novelty": 55.3,
+        "hero": "price-card-stack",
+        "seq": [
+          "hero",
+          "offer",
+          "specs",
+          "faq",
+          "gallery",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 93,
+          "seo": 100,
+          "overall": 98
+        },
+        "schemaOk": true
+      }
+    ]
+  },
+  {
+    "url": "https://www.gonoise.com/products/noise-alt-buds-s-truly-wireless-bluetooth-earbuds-chosen-black",
+    "runId": "32bbf138-502e-494d-832a-119426fb3484",
+    "category": "bogo_product",
+    "status": "completed",
+    "error": null,
+    "seconds": 11,
+    "variants": 1,
+    "designs": [
+      {
+        "id": "3a0b8030-bd57-4a09-9253-94b6b62d0af7",
+        "label": "Design A — Story-led",
+        "novelty": 100,
+        "hero": "overlay-card",
+        "seq": [
+          "hero",
+          "faq",
+          "gallery",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 86,
+          "seo": 100,
+          "overall": 95
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "33e54045-9ce4-4a22-ad3a-08725f7b4d8a",
+        "label": "Design B — Benefit-first",
+        "novelty": 50.5,
+        "hero": "compact-left-gallery",
+        "seq": [
+          "hero",
+          "faq",
+          "gallery",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 86,
+          "seo": 100,
+          "overall": 95
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "ef7e875e-d1ce-4730-b0da-5fe26af75ab1",
+        "label": "Design C — Social-proof-led",
+        "novelty": 56.1,
+        "hero": "split-proof-strip",
+        "seq": [
+          "hero",
+          "gallery",
+          "faq",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 86,
+          "seo": 100,
+          "overall": 95
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "4d16b9d6-b994-43c0-b97d-4560845dd499",
+        "label": "Design D — Offer-led",
+        "novelty": 47.9,
+        "hero": "price-card-stack",
+        "seq": [
+          "hero",
+          "offer",
+          "faq",
+          "gallery",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 86,
+          "seo": 100,
+          "overall": 95
+        },
+        "schemaOk": true
+      }
+    ]
+  },
+  {
+    "url": "https://www.ptron.in/products/ptron-funk-duet-v1-mini-8w-wireless-speaker-with-enchanting-sound-8hrs-playtime-52mm-dynamic-driver-bluetooth-v5-3-portable-speaker-bt-microsd-card-usb-playback-integrated-music-control-blue",
+    "runId": "ec52505e-4fb0-42a5-8c68-bf0f64200335",
+    "category": "general",
+    "status": "completed",
+    "error": null,
+    "seconds": 11,
+    "variants": 1,
+    "designs": [
+      {
+        "id": "f919087b-6ab2-4a7a-8010-f33046de11a7",
+        "label": "Design A — Story-led",
+        "novelty": 100,
+        "hero": "overlay-card",
+        "seq": [
+          "hero",
+          "gallery",
+          "story",
+          "faq",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 100,
+          "seo": 93,
+          "overall": 98
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "624b2164-749a-421b-8f70-61262171890f",
+        "label": "Design B — Benefit-first",
+        "novelty": 70.8,
+        "hero": "centered-chips",
+        "seq": [
+          "hero",
+          "faq",
+          "gallery",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 100,
+          "seo": 97,
+          "overall": 99
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "cb53d306-d8e3-425b-b450-744bc88c008d",
+        "label": "Design C — Social-proof-led",
+        "novelty": 53.3,
+        "hero": "split-proof-strip",
+        "seq": [
+          "hero",
+          "gallery",
+          "faq",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 100,
+          "seo": 97,
+          "overall": 99
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "082ba65e-d183-4b25-80e0-c1fd6a31c1e4",
+        "label": "Design D — Offer-led",
+        "novelty": 52.6,
+        "hero": "top-banner-center",
+        "seq": [
+          "hero",
+          "offer",
+          "faq",
+          "gallery",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 100,
+          "seo": 97,
+          "overall": 99
+        },
+        "schemaOk": true
+      }
+    ]
+  },
+  {
+    "url": "https://www.beardo.in/products/beardo-ultraglow-face-cream-spf-30-bau-1199-sale",
+    "runId": "3bb96616-38bf-4a9b-9f37-08f298634a14",
+    "category": "face cream",
+    "status": "completed",
+    "error": null,
+    "seconds": 13,
+    "variants": 3,
+    "designs": [
+      {
+        "id": "3b29637d-b4cf-487b-8935-1a41364c78ae",
+        "label": "Design A — Story-led",
+        "novelty": 100,
+        "hero": "split-editorial",
+        "seq": [
+          "hero",
+          "story",
+          "faq",
+          "gallery",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 100,
+          "seo": 100,
+          "overall": 100
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "e90c7979-7101-42e3-84e9-9505202fe537",
+        "label": "Design B — Benefit-first",
+        "novelty": 58.8,
+        "hero": "headline-chips-right",
+        "seq": [
+          "hero",
+          "faq",
+          "comparison",
+          "gallery",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 100,
+          "seo": 100,
+          "overall": 100
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "8bc25b22-0aa6-44e3-8585-fce0b36db1b1",
+        "label": "Design C — Social-proof-led",
+        "novelty": 55.4,
+        "hero": "mosaic-proof",
+        "seq": [
+          "hero",
+          "gallery",
+          "faq",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 100,
+          "seo": 100,
+          "overall": 100
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "18ba28b8-fa4d-491b-b652-1c7a18278ea6",
+        "label": "Design D — Offer-led",
+        "novelty": 63,
+        "hero": "top-banner-center",
+        "seq": [
+          "hero",
+          "offer",
+          "comparison",
+          "faq",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 100,
+          "seo": 100,
+          "overall": 100
+        },
+        "schemaOk": true
+      }
+    ]
+  },
+  {
+    "url": "https://www.nobero.com/products/westward-look",
+    "runId": "10590a64-850b-41a4-a5b7-47b90c5bd2ee",
+    "category": "men coord set",
+    "status": "completed",
+    "error": null,
+    "seconds": 11,
+    "variants": 6,
+    "designs": [
+      {
+        "id": "553385e8-b19c-4f2d-93d0-58cb893c59df",
+        "label": "Design A — Story-led",
+        "novelty": 100,
+        "hero": "overlay-card",
+        "seq": [
+          "hero",
+          "story",
+          "specs",
+          "faq",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 94,
+          "seo": 100,
+          "overall": 98
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "be030945-e4cd-4a61-839a-4e506a051288",
+        "label": "Design B — Benefit-first",
+        "novelty": 60.1,
+        "hero": "compact-left-gallery",
+        "seq": [
+          "hero",
+          "specs",
+          "comparison",
+          "faq",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 94,
+          "seo": 100,
+          "overall": 98
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "b3f00a9b-7c0d-4da6-986e-9923252073f0",
+        "label": "Design C — Social-proof-led",
+        "novelty": 57.6,
+        "hero": "split-proof-strip",
+        "seq": [
+          "hero",
+          "gallery",
+          "specs",
+          "faq",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 94,
+          "seo": 100,
+          "overall": 98
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "db917c47-a7dd-49d8-bcb7-b25fe04e52a2",
+        "label": "Design D — Offer-led",
+        "novelty": 56,
+        "hero": "price-badge-split",
+        "seq": [
+          "hero",
+          "offer",
+          "specs",
+          "faq",
+          "comparison",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 94,
+          "seo": 100,
+          "overall": 98
+        },
+        "schemaOk": true
+      }
+    ]
+  },
+  {
+    "url": "https://www.allbirds.com/products/trino-hiders-onyx",
+    "runId": "fa0df5ae-502a-4154-bc97-ff2cb79aea09",
+    "category": "socks",
+    "status": "completed",
+    "error": null,
+    "seconds": 10,
+    "variants": 4,
+    "designs": [
+      {
+        "id": "10e0f0b2-f89e-4ffd-9794-697842888bd8",
+        "label": "Design A — Story-led",
+        "novelty": 100,
+        "hero": "masthead-stack",
+        "seq": [
+          "hero",
+          "story",
+          "faq",
+          "gallery",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 100,
+          "seo": 97,
+          "overall": 99
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "e2f98e5f-a985-4528-9973-7f79230fbdbd",
+        "label": "Design B — Benefit-first",
+        "novelty": 57,
+        "hero": "headline-chips-right",
+        "seq": [
+          "hero",
+          "comparison",
+          "faq",
+          "gallery",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 100,
+          "seo": 100,
+          "overall": 100
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "6713dee9-8ead-43c4-bcb1-8523e5213304",
+        "label": "Design C — Social-proof-led",
+        "novelty": 54.5,
+        "hero": "rating-banner",
+        "seq": [
+          "hero",
+          "gallery",
+          "faq",
+          "usecases",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 100,
+          "seo": 100,
+          "overall": 100
+        },
+        "schemaOk": true
+      },
+      {
+        "id": "d7eebd1b-42e8-4ba3-8e07-271463184abe",
+        "label": "Design D — Offer-led",
+        "novelty": 59.6,
+        "hero": "price-badge-split",
+        "seq": [
+          "hero",
+          "offer",
+          "comparison",
+          "faq",
+          "cta"
+        ],
+        "seo": {
+          "aeo": 100,
+          "geo": 100,
+          "seo": 100,
+          "overall": 100
+        },
+        "schemaOk": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+services:
+  mysql:
+    image: mysql:8.0
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-change_me}
+      MYSQL_DATABASE: wishluck_studio
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-p${MYSQL_ROOT_PASSWORD:-change_me}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  app:
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      NODE_ENV: production
+      PORT: 3001
+      DATABASE_URL: mysql://root:${MYSQL_ROOT_PASSWORD:-change_me}@mysql:3306/wishluck_studio
+      DATA_DIR: /app/data
+      SHOPIFY_STORE_DOMAIN: ${SHOPIFY_STORE_DOMAIN:-}
+      SHOPIFY_ADMIN_TOKEN: ${SHOPIFY_ADMIN_TOKEN:-}
+      SHOPIFY_API_VERSION: ${SHOPIFY_API_VERSION:-2025-10}
+      ALLOW_PUBLISHED_THEME: ${ALLOW_PUBLISHED_THEME:-false}
+      AI_PROVIDER: ${AI_PROVIDER:-none}
+      AI_API_KEY: ${AI_API_KEY:-}
+      AI_MODEL: ${AI_MODEL:-}
+      AI_BASE_URL: ${AI_BASE_URL:-}
+      SEARCH_PROVIDER: ${SEARCH_PROVIDER:-none}
+      BRAVE_API_KEY: ${BRAVE_API_KEY:-}
+      SERPAPI_API_KEY: ${SERPAPI_API_KEY:-}
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+volumes:
+  mysql-data:

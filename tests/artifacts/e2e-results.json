@@ -1,0 +1,1031 @@
+{
+  "ranAt": "2026-11-21T15:43:22.553Z",
+  "designs": 24,
+  "passed": 24,
+  "results": [
+    {
+      "product": "boat-partypal-800",
+      "design": "Design C — Social-proof-led",
+      "id": "023ee8ee-fa57-4180-8d42-aa351cc23e43",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 51036782002274,
+          "price": "₹34,999",
+          "expected": "₹34,999",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.boat-lifestyle.com/cart/51036782002274:1",
+          "addToCartTargetsVariant": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "boat-partypal-800",
+      "design": "Design D — Offer-led",
+      "id": "a415e81f-a4cf-4cdc-9138-ad680c18f2b0",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 51036782002274,
+          "price": "₹34,999",
+          "expected": "₹34,999",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.boat-lifestyle.com/cart/51036782002274:1",
+          "addToCartTargetsVariant": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "boat-partypal-800",
+      "design": "Design A — Story-led",
+      "id": "385b6d65-4234-4660-be75-07f00fde4bca",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 51036782002274,
+          "price": "₹34,999",
+          "expected": "₹34,999",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.boat-lifestyle.com/cart/51036782002274:1",
+          "addToCartTargetsVariant": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "boat-partypal-800",
+      "design": "Design B — Benefit-first",
+      "id": "a6293516-b002-40c1-8049-f6352cbed179",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 51036782002274,
+          "price": "₹34,999",
+          "expected": "₹34,999",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.boat-lifestyle.com/cart/51036782002274:1",
+          "addToCartTargetsVariant": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "noise-alt-buds-s-truly-wireless-bluetooth-earbuds-chosen-black",
+      "design": "Design A — Story-led",
+      "id": "3a0b8030-bd57-4a09-9253-94b6b62d0af7",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 44650691362903,
+          "price": "₹0",
+          "expected": "₹0",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "noise-alt-buds-s-truly-wireless-bluetooth-earbuds-chosen-black",
+      "design": "Design B — Benefit-first",
+      "id": "33e54045-9ce4-4a22-ad3a-08725f7b4d8a",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 44650691362903,
+          "price": "₹0",
+          "expected": "₹0",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "noise-alt-buds-s-truly-wireless-bluetooth-earbuds-chosen-black",
+      "design": "Design C — Social-proof-led",
+      "id": "ef7e875e-d1ce-4730-b0da-5fe26af75ab1",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 44650691362903,
+          "price": "₹0",
+          "expected": "₹0",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "noise-alt-buds-s-truly-wireless-bluetooth-earbuds-chosen-black",
+      "design": "Design D — Offer-led",
+      "id": "4d16b9d6-b994-43c0-b97d-4560845dd499",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 44650691362903,
+          "price": "₹0",
+          "expected": "₹0",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "ptron-funk-duet-v1-mini-8w-wireless-speaker-with-enchanting-sound-8hrs-playtime-52mm-dynamic-driver-bluetooth-v5-3-portable-speaker-bt-microsd-card-usb-playback-integrated-music-control-blue",
+      "design": "Design A — Story-led",
+      "id": "f919087b-6ab2-4a7a-8010-f33046de11a7",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 42435170631760,
+          "price": "₹2,299",
+          "expected": "₹2,299",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "ptron-funk-duet-v1-mini-8w-wireless-speaker-with-enchanting-sound-8hrs-playtime-52mm-dynamic-driver-bluetooth-v5-3-portable-speaker-bt-microsd-card-usb-playback-integrated-music-control-blue",
+      "design": "Design B — Benefit-first",
+      "id": "624b2164-749a-421b-8f70-61262171890f",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 42435170631760,
+          "price": "₹2,299",
+          "expected": "₹2,299",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "ptron-funk-duet-v1-mini-8w-wireless-speaker-with-enchanting-sound-8hrs-playtime-52mm-dynamic-driver-bluetooth-v5-3-portable-speaker-bt-microsd-card-usb-playback-integrated-music-control-blue",
+      "design": "Design C — Social-proof-led",
+      "id": "cb53d306-d8e3-425b-b450-744bc88c008d",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 42435170631760,
+          "price": "₹2,299",
+          "expected": "₹2,299",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "ptron-funk-duet-v1-mini-8w-wireless-speaker-with-enchanting-sound-8hrs-playtime-52mm-dynamic-driver-bluetooth-v5-3-portable-speaker-bt-microsd-card-usb-playback-integrated-music-control-blue",
+      "design": "Design D — Offer-led",
+      "id": "082ba65e-d183-4b25-80e0-c1fd6a31c1e4",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 42435170631760,
+          "price": "₹2,299",
+          "expected": "₹2,299",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "beardo-ultraglow-face-cream-spf-30-bau-1199-sale",
+      "design": "Design A — Story-led",
+      "id": "3b29637d-b4cf-487b-8935-1a41364c78ae",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 49364995637556,
+          "price": "₹299",
+          "expected": "₹299",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.beardo.in/cart/49364995637556:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 49364995670324,
+          "price": "₹599",
+          "expected": "₹599",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.beardo.in/cart/49364995670324:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 49364995703092,
+          "price": "₹899",
+          "expected": "₹899",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.beardo.in/cart/49364995703092:1",
+          "addToCartTargetsVariant": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "beardo-ultraglow-face-cream-spf-30-bau-1199-sale",
+      "design": "Design B — Benefit-first",
+      "id": "e90c7979-7101-42e3-84e9-9505202fe537",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 49364995637556,
+          "price": "₹299",
+          "expected": "₹299",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.beardo.in/cart/49364995637556:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 49364995670324,
+          "price": "₹599",
+          "expected": "₹599",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.beardo.in/cart/49364995670324:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 49364995703092,
+          "price": "₹899",
+          "expected": "₹899",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.beardo.in/cart/49364995703092:1",
+          "addToCartTargetsVariant": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "beardo-ultraglow-face-cream-spf-30-bau-1199-sale",
+      "design": "Design C — Social-proof-led",
+      "id": "8bc25b22-0aa6-44e3-8585-fce0b36db1b1",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 49364995637556,
+          "price": "₹299",
+          "expected": "₹299",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.beardo.in/cart/49364995637556:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 49364995670324,
+          "price": "₹599",
+          "expected": "₹599",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.beardo.in/cart/49364995670324:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 49364995703092,
+          "price": "₹899",
+          "expected": "₹899",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.beardo.in/cart/49364995703092:1",
+          "addToCartTargetsVariant": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "beardo-ultraglow-face-cream-spf-30-bau-1199-sale",
+      "design": "Design D — Offer-led",
+      "id": "18ba28b8-fa4d-491b-b652-1c7a18278ea6",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 49364995637556,
+          "price": "₹299",
+          "expected": "₹299",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.beardo.in/cart/49364995637556:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 49364995670324,
+          "price": "₹599",
+          "expected": "₹599",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.beardo.in/cart/49364995670324:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 49364995703092,
+          "price": "₹899",
+          "expected": "₹899",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.beardo.in/cart/49364995703092:1",
+          "addToCartTargetsVariant": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "westward-look",
+      "design": "Design A — Story-led",
+      "id": "553385e8-b19c-4f2d-93d0-58cb893c59df",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 58466367144102,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367144102:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367176870,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367176870:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367209638,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367209638:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367242406,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367242406:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367275174,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367275174:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367307942,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367307942:1",
+          "addToCartTargetsVariant": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "westward-look",
+      "design": "Design B — Benefit-first",
+      "id": "be030945-e4cd-4a61-839a-4e506a051288",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 58466367144102,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367144102:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367176870,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367176870:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367209638,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367209638:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367242406,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367242406:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367275174,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367275174:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367307942,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367307942:1",
+          "addToCartTargetsVariant": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "westward-look",
+      "design": "Design C — Social-proof-led",
+      "id": "b3f00a9b-7c0d-4da6-986e-9923252073f0",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 58466367144102,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367144102:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367176870,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367176870:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367209638,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367209638:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367242406,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367242406:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367275174,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367275174:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367307942,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367307942:1",
+          "addToCartTargetsVariant": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "westward-look",
+      "design": "Design D — Offer-led",
+      "id": "db917c47-a7dd-49d8-bcb7-b25fe04e52a2",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 58466367144102,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367144102:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367176870,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367176870:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367209638,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367209638:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367242406,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367242406:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367275174,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367275174:1",
+          "addToCartTargetsVariant": true
+        },
+        {
+          "id": 58466367307942,
+          "price": "₹2,598",
+          "expected": "₹2,598",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true,
+          "cartPermalink": "https://www.nobero.com/cart/58466367307942:1",
+          "addToCartTargetsVariant": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "trino-hiders-onyx",
+      "design": "Design A — Story-led",
+      "id": "10e0f0b2-f89e-4ffd-9794-697842888bd8",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 28941049135184,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        },
+        {
+          "id": 28941049200720,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        },
+        {
+          "id": 28941049266256,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        },
+        {
+          "id": 28941049299024,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "trino-hiders-onyx",
+      "design": "Design B — Benefit-first",
+      "id": "e2f98e5f-a985-4528-9973-7f79230fbdbd",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 28941049135184,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        },
+        {
+          "id": 28941049200720,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        },
+        {
+          "id": 28941049266256,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        },
+        {
+          "id": 28941049299024,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "trino-hiders-onyx",
+      "design": "Design C — Social-proof-led",
+      "id": "6713dee9-8ead-43c4-bcb1-8523e5213304",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 28941049135184,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        },
+        {
+          "id": 28941049200720,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        },
+        {
+          "id": 28941049266256,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        },
+        {
+          "id": 28941049299024,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "product": "trino-hiders-onyx",
+      "design": "Design D — Offer-led",
+      "id": "d7eebd1b-42e8-4ba3-8e07-271463184abe",
+      "checks": {
+        "mobile-no-horizontal-overflow": true,
+        "mobile-atc-visible-first-viewport": true,
+        "mobile-atc-inline-in-first-viewport": false,
+        "mobile-sticky-visible-after-scroll": true,
+        "tablet-no-horizontal-overflow": true,
+        "desktop-no-horizontal-overflow": true,
+        "quantity-increments": true
+      },
+      "failures": [],
+      "variantTests": [
+        {
+          "id": 28941049135184,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        },
+        {
+          "id": 28941049200720,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        },
+        {
+          "id": 28941049266256,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        },
+        {
+          "id": 28941049299024,
+          "price": "$3",
+          "expected": "$3",
+          "idMatches": true,
+          "priceMatches": true,
+          "soldOutHandled": true
+        }
+      ],
+      "passed": true
+    }
+  ]
+}

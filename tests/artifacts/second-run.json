@@ -1,0 +1,78 @@
+{
+  "firstRun": "d93cdced-bbce-46e0-8821-eda5e035258f",
+  "secondRun": "c8713625-d0d8-4fdf-adef-29df8dec371b",
+  "feedback": [
+    "Design A approved",
+    "Design B rejected: hero too generic"
+  ],
+  "rows": [
+    {
+      "label": "Design A — Story-led",
+      "novelty": 52.1,
+      "attempts": 1,
+      "closest": "Design A — Story-led",
+      "closestInSameRun": false,
+      "belowThreshold": false,
+      "heroRun1": "split-editorial",
+      "heroRun2": "overlay-card",
+      "seqRun1": "hero>story>gallery>specs>faq>cta",
+      "seqRun2": "hero>story>faq>specs>cta",
+      "differences": [
+        "Section order: [hero → story → faq → specs → cta] vs [hero → story → gallery → specs → faq → cta]",
+        "Hero: story/overlay-card vs story/split-editorial",
+        "Gallery: thumbs-below vs thumbs-left"
+      ]
+    },
+    {
+      "label": "Design B — Benefit-first",
+      "novelty": 43.9,
+      "attempts": 1,
+      "closest": "Design B — Benefit-first",
+      "closestInSameRun": false,
+      "belowThreshold": false,
+      "heroRun1": "compact-left-gallery",
+      "heroRun2": "headline-chips-right",
+      "seqRun1": "hero>specs>faq>gallery>usecases>cta",
+      "seqRun2": "hero>specs>faq>gallery>usecases>cta",
+      "differences": [
+        "Hero: benefit/headline-chips-right vs benefit/compact-left-gallery",
+        "Gallery: thumbs-below vs stacked",
+        "CTA style: square/auto vs rounded/full"
+      ]
+    },
+    {
+      "label": "Design C — Social-proof-led",
+      "novelty": 43.8,
+      "attempts": 1,
+      "closest": "Design C — Social-proof-led",
+      "closestInSameRun": false,
+      "belowThreshold": false,
+      "heroRun1": "split-proof-strip",
+      "heroRun2": "mosaic-proof",
+      "seqRun1": "hero>gallery>specs>faq>cta",
+      "seqRun2": "hero>gallery>specs>faq>usecases>cta",
+      "differences": [
+        "Hero: proof/mosaic-proof vs proof/split-proof-strip",
+        "Gallery: thumbs-below vs single-hero",
+        "Offer placement: hero-price vs banner"
+      ]
+    },
+    {
+      "label": "Design D — Offer-led",
+      "novelty": 45.3,
+      "attempts": 1,
+      "closest": "Design D — Offer-led",
+      "closestInSameRun": false,
+      "belowThreshold": false,
+      "heroRun1": "price-card-stack",
+      "heroRun2": "top-banner-center",
+      "seqRun1": "hero>offer>specs>faq>gallery>usecases>cta",
+      "seqRun2": "hero>offer>specs>faq>cta",
+      "differences": [
+        "Section order: [hero → offer → specs → faq → cta] vs [hero → offer → specs → faq → gallery → usecases → cta]",
+        "Hero: offer/top-banner-center vs offer/price-card-stack",
+        "Gallery: thumbs-below vs thumbs-left"
+      ]
+    }
+  ]
+}

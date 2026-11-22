@@ -1,0 +1,27 @@
+{%- liquid
+  assign gstyle = style | default: 'thumbs-below'
+  assign sizes = '(min-width: 900px) 50vw, 100vw'
+-%}
+<div class="wl-media" data-style="{{ gstyle }}">
+  <ul class="wl-media__list">
+    {%- for image in product.images limit: 8 -%}
+      {%- assign alt_text = image.alt | default: product.title -%}
+      <li class="wl-media__item{% if forloop.first %} is-active{% endif %}" data-i="{{ forloop.index0 }}">
+        {%- if forloop.first -%}
+          {{ image | image_url: width: 1000 | image_tag: loading: 'eager', fetchpriority: 'high', sizes: sizes, widths: '360, 540, 720, 1000', alt: alt_text }}
+        {%- else -%}
+          {{ image | image_url: width: 800 | image_tag: loading: 'lazy', sizes: sizes, widths: '360, 540, 800', alt: alt_text }}
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+  {%- if gstyle contains 'thumbs' and product.images.size > 1 -%}
+    <div class="wl-media__thumbs">
+      {%- for image in product.images limit: 8 -%}
+        <button type="button" class="wl-media__thumb" data-wl-thumb="{{ forloop.index0 }}" aria-label="Show image {{ forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">
+          {{ image | image_url: width: 128 | image_tag: loading: 'lazy', width: 64, height: 64, alt: '' }}
+        </button>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</div>

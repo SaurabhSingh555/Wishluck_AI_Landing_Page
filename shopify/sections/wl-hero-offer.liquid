@@ -1,0 +1,384 @@
+{%- if section.settings.show_section -%}
+{%- render 'wl-style', section: section -%}
+{%- assign s = section.settings -%}
+{%- assign crumb = product.collections.first -%}
+{%- assign hero_bg = s.background_image | default: product.images[1] | default: product.images[0] -%}
+<section class="wl-section wl-hero wl-hero-kind--offer wl-hero--{{ s.layout }} wl-hero--density-{{ s.density }} wl-align--{{ s.align }}"{% if s.layout == 'overlay-card' %} style="--wl-hero-bg: url('{{ hero_bg | image_url: width: 1600 }}')"{% endif %} aria-label="{{ product.title | escape }}">
+  <div class="wl-wrap">
+    <nav class="wl-crumbs" aria-label="Breadcrumb">
+      <a href="{{ routes.root_url }}">Home</a> /
+      {% if crumb %}<a href="{{ crumb.url }}">{{ crumb.title | escape }}</a>{% else %}<a href="{{ routes.all_products_collection_url }}">All products</a>{% endif %} /
+      <span>{{ product.title | escape }}</span>
+    </nav>
+    <div class="wl-hero__grid">
+        {%- if s.bar_text != blank -%}<div class="wl-hero__bar" role="note">{{ s.bar_text | escape }}</div>{%- endif -%}
+      <div class="wl-hero__copy">
+        {%- if s.eyebrow != blank -%}<p class="wl-eyebrow">{{ s.eyebrow | escape }}</p>{%- endif -%}
+        <h1 id="wl-h-{{ section.id }}">{{ s.heading | escape }}</h1>
+        {%- if s.subheading != blank -%}<p class="wl-lead">{{ s.subheading | escape }}</p>{%- endif -%}
+        {%- if s.show_trust and s.trust_position == 'copy' -%}
+          <ul class="wl-trust-list">{%- for block in section.blocks -%}{%- if block.type == 'trust' -%}<li {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</li>{%- endif -%}{%- endfor -%}</ul>
+        {%- endif -%}
+      </div>
+      <div class="wl-hero__chips">
+        <ul class="wl-chips">
+          {%- for block in section.blocks -%}{%- if block.type == 'highlight' -%}<li {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</li>{%- endif -%}{%- endfor -%}
+        </ul>
+      </div>
+      <div class="wl-hero__media">
+        {%- render 'wl-media', product: product, style: s.gallery_style -%}
+      </div>
+      <div class="wl-hero__buy" id="wl-buy">
+        <p class="wl-hero__product">{{ product.title | escape }}</p>
+        {%- render 'wl-buybox', product: product, section: section -%}
+        {%- if s.show_trust and s.trust_position == 'buy' -%}
+          <ul class="wl-trust-list">{%- for block in section.blocks -%}{%- if block.type == 'trust' -%}<li {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</li>{%- endif -%}{%- endfor -%}</ul>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+{%- endif -%}
+{% schema %}
+{
+  "name": "Hero: offer-led",
+  "tag": "section",
+  "class": "wl-section-wrapper",
+  "settings": [
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Hero layout",
+      "options": [
+        {
+          "value": "price-badge-split",
+          "label": "Price badge split"
+        },
+        {
+          "value": "top-banner-center",
+          "label": "Top banner center"
+        },
+        {
+          "value": "price-card-stack",
+          "label": "Price card stack"
+        }
+      ],
+      "default": "price-badge-split"
+    },
+    {
+      "type": "select",
+      "id": "density",
+      "label": "Content density",
+      "options": [
+        {
+          "value": "low",
+          "label": "Low"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "high",
+          "label": "High"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": ""
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading (H1)",
+      "default": ""
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": ""
+    },
+    {
+      "type": "text",
+      "id": "bar_text",
+      "label": "Offer banner (only factual offers)",
+      "default": ""
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image (overlay layout)"
+    },
+    {
+      "type": "header",
+      "content": "Gallery & purchase controls"
+    },
+    {
+      "type": "select",
+      "id": "gallery_style",
+      "label": "Gallery style",
+      "options": [
+        {
+          "value": "thumbs-left",
+          "label": "Thumbs left"
+        },
+        {
+          "value": "thumbs-below",
+          "label": "Thumbs below"
+        },
+        {
+          "value": "stacked",
+          "label": "Stacked"
+        },
+        {
+          "value": "single-hero",
+          "label": "Single hero"
+        }
+      ],
+      "default": "thumbs-below"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Add to cart"
+    },
+    {
+      "type": "select",
+      "id": "button_width",
+      "label": "Button width",
+      "options": [
+        {
+          "value": "full",
+          "label": "Full width"
+        },
+        {
+          "value": "auto",
+          "label": "Auto"
+        }
+      ],
+      "default": "full"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_quantity",
+      "label": "Show quantity selector",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_trust",
+      "label": "Show verified trust points",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "trust_position",
+      "label": "Trust points position",
+      "options": [
+        {
+          "value": "copy",
+          "label": "Under heading"
+        },
+        {
+          "value": "buy",
+          "label": "Under buy button"
+        }
+      ],
+      "default": "buy"
+    },
+    {
+      "type": "header",
+      "content": "Visibility & layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_section",
+      "label": "Show section",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top spacing",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom spacing",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#141414"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent",
+      "default": "#5b5bd6"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button",
+      "default": "#5b5bd6"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Heading font",
+      "default": "inter_n4"
+    },
+    {
+      "type": "font_picker",
+      "id": "body_font",
+      "label": "Body font",
+      "default": "inter_n4"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 24,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 44
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "label": "Heading weight",
+      "options": [
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semibold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        },
+        {
+          "value": "800",
+          "label": "Extra bold"
+        }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "select",
+      "id": "heading_case",
+      "label": "Heading case",
+      "options": [
+        {
+          "value": "none",
+          "label": "As typed"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "range",
+      "id": "button_radius",
+      "label": "Button & card radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    }
+  ],
+  "blocks": [
+    {
+      "type": "highlight",
+      "name": "Highlight chip",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "type": "trust",
+      "name": "Trust point",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Verified trust point",
+          "default": ""
+        }
+      ]
+    }
+  ],
+  "enabled_on": {
+    "templates": [
+      "product"
+    ]
+  }
+}
+{% endschema %}

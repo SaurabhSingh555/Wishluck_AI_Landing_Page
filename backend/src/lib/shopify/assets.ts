@@ -1,0 +1,269 @@
+// Static theme assets shipped with every generated theme: assets/wl-base.css and assets/wl-product.js
+
+export const WL_CSS = `/* Wishluck AI Landing Page Studio — base styles. Colors/fonts/spacing come from section settings (CSS variables). */
+.wl-section{background:var(--wl-bg,#fff);color:var(--wl-text,#111);font-family:var(--wl-font-body,system-ui,sans-serif);font-size:calc(1rem*var(--wl-body-scale,1));line-height:1.6;padding:var(--wl-pt,56px) 0 var(--wl-pb,56px)}
+.wl-section *,.wl-section *::before,.wl-section *::after{box-sizing:border-box}
+.wl-wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.wl-section img{max-width:100%;height:auto;display:block}
+.wl-section h1,.wl-section h2,.wl-section h3,.wl-section h4{font-family:var(--wl-font-heading,inherit);text-transform:var(--wl-case,none);font-weight:var(--wl-hweight,700);line-height:1.12;letter-spacing:-.01em;margin:0 0 .5em;color:var(--wl-text)}
+.wl-section h1{font-size:clamp(30px,7.2vw,var(--wl-hs,44px))}
+.wl-section h2{font-size:clamp(24px,5vw,calc(var(--wl-hs,44px)*.68))}
+.wl-section h3{font-size:clamp(18px,3vw,calc(var(--wl-hs,44px)*.42))}
+.wl-section p{margin:0 0 1em}
+.wl-section a{color:var(--wl-accent)}
+.wl-align--center{text-align:center}.wl-align--left{text-align:left}.wl-align--right{text-align:right}
+.wl-eyebrow{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--wl-accent);margin-bottom:.8em}
+.wl-lead{font-size:1.15em;opacity:.92;max-width:60ch}
+.wl-align--center .wl-lead{margin-left:auto;margin-right:auto}
+.wl-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:48px;padding:0 1.8em;border:2px solid var(--wl-btn,#111);background:var(--wl-btn,#111);color:var(--wl-btn-text,#fff);font:inherit;font-weight:700;border-radius:var(--wl-radius,8px);cursor:pointer;text-decoration:none;transition:transform .15s,box-shadow .15s,opacity .15s}
+.wl-btn:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.wl-btn:focus-visible,.wl-section :focus-visible{outline:3px solid var(--wl-accent);outline-offset:2px}
+.wl-btn[disabled]{opacity:.55;cursor:not-allowed;transform:none;box-shadow:none}
+.wl-btn--ghost{background:transparent;color:var(--wl-btn);}
+.wl-btn--block{width:100%}
+.wl-crumbs{font-size:.85rem;margin-bottom:18px;opacity:.85}.wl-crumbs a{color:inherit}
+/* hero */
+.wl-hero__grid{display:grid;gap:22px;grid-template-columns:minmax(0,1fr);grid-template-areas:"bar" "copy" "media" "buy" "chips"}
+.wl-hero__bar{grid-area:bar;padding:12px 18px;border-radius:var(--wl-radius,8px);background:var(--wl-accent);color:var(--wl-bg);font-weight:700}
+.wl-hero__copy{grid-area:copy}.wl-hero__chips{grid-area:chips}.wl-hero__media{grid-area:media;min-width:0}.wl-hero__buy{grid-area:buy;min-width:0}
+.wl-hero__copy .wl-lead{display:none}
+.wl-hero__product{font-weight:600;margin-bottom:.6em}
+.wl-chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
+.wl-chips li{padding:8px 14px;border:1.5px solid var(--wl-accent);border-radius:999px;font-size:.92rem;font-weight:600}
+.wl-hero--density-low .wl-hero__chips,.wl-hero--density-low .wl-hero__copy .wl-lead{display:none}
+@media(min-width:900px){
+.wl-hero__copy .wl-lead{display:block}
+.wl-hero__grid{gap:32px 56px}
+.wl-hero--split-editorial .wl-hero__grid{grid-template-columns:1.1fr 1fr;grid-template-areas:"bar bar" "copy media" "chips media" "buy media";align-items:start}
+.wl-hero--masthead-stack .wl-hero__grid{grid-template-columns:1.15fr .85fr;grid-template-areas:"bar bar" "copy copy" "chips chips" "media buy";align-items:start}
+.wl-hero--masthead-stack .wl-hero__copy{text-align:center;margin:0 auto;max-width:820px}.wl-hero--masthead-stack .wl-lead{margin-inline:auto}.wl-hero--masthead-stack .wl-chips{justify-content:center}
+.wl-hero--overlay-card .wl-hero__grid{grid-template-columns:1fr 1fr;grid-template-areas:"bar bar" "copy copy" "chips chips" "media buy";align-items:start}
+.wl-hero--headline-chips-right .wl-hero__grid{grid-template-columns:1fr 1fr;grid-template-areas:"bar bar" "media copy" "media chips" "media buy";align-items:start}
+.wl-hero--centered-chips .wl-hero__grid{grid-template-columns:minmax(0,820px);justify-content:center;grid-template-areas:"bar" "copy" "chips" "media" "buy";text-align:center}.wl-hero--centered-chips .wl-chips{justify-content:center}.wl-hero--centered-chips .wl-lead{margin-inline:auto}
+.wl-hero--compact-left-gallery .wl-hero__grid{grid-template-columns:1.35fr 1fr;grid-template-areas:"bar bar" "media copy" "media chips" "media buy";gap:28px 40px;align-items:start}
+.wl-hero--rating-banner .wl-hero__grid{grid-template-columns:1fr 1fr;grid-template-areas:"bar bar" "media copy" "media buy" "chips chips";align-items:start}
+.wl-hero--mosaic-proof .wl-hero__grid{grid-template-columns:1.2fr 1fr;grid-template-areas:"media copy" "media buy" "chips chips" "bar bar";align-items:start}
+.wl-hero--split-proof-strip .wl-hero__grid{grid-template-columns:1fr 1.1fr;grid-template-areas:"bar bar" "copy media" "chips media" "buy media";align-items:start}
+.wl-hero--price-badge-split .wl-hero__grid{grid-template-columns:1fr 1fr;grid-template-areas:"bar bar" "media copy" "media buy" "media chips";align-items:start}
+.wl-hero--top-banner-center .wl-hero__grid{grid-template-columns:1fr 1fr;grid-template-areas:"bar bar" "copy copy" "media buy" "chips chips";text-align:center}.wl-hero--top-banner-center .wl-buybox{text-align:left}.wl-hero--top-banner-center .wl-chips{justify-content:center}.wl-hero--top-banner-center .wl-lead{margin-inline:auto}
+.wl-hero--price-card-stack .wl-hero__grid{grid-template-columns:1.2fr 1fr;grid-template-areas:"bar bar" "copy media" "chips media" "buy buy";align-items:start}
+.wl-hero--price-card-stack .wl-hero__buy .wl-buybox{display:grid;grid-template-columns:1fr 1fr;gap:20px 40px}.wl-hero--price-card-stack .wl-buybox>*{grid-column:auto}
+}
+.wl-hero--overlay-card{background-image:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),var(--wl-hero-bg);background-size:cover;background-position:center}
+.wl-hero--overlay-card .wl-hero__copy,.wl-hero--overlay-card .wl-hero__chips{color:#fff}.wl-hero--overlay-card h1,.wl-hero--overlay-card .wl-eyebrow,.wl-hero--overlay-card .wl-crumbs,.wl-hero--overlay-card .wl-crumbs a{color:#fff}
+.wl-hero--overlay-card .wl-hero__buy,.wl-hero--overlay-card .wl-hero__media{background:var(--wl-bg);color:var(--wl-text);border-radius:calc(var(--wl-radius,8px)*1.5);padding:18px}
+.wl-hero--price-card-stack .wl-hero__buy{border:2px solid var(--wl-accent);border-radius:calc(var(--wl-radius,8px)*1.5);padding:20px}
+/* media */
+.wl-media{position:relative}
+.wl-media__list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.wl-media__item img{width:100%;border-radius:calc(var(--wl-radius,8px)*1.2);object-fit:cover;aspect-ratio:var(--wl-ar,1/1);max-height:32vh;background:rgba(0,0,0,.04)}
+.wl-media[data-style="thumbs-left"] .wl-media__item:not(.is-active),.wl-media[data-style="thumbs-below"] .wl-media__item:not(.is-active){display:none}
+.wl-media__thumbs{display:flex;gap:8px;margin-top:10px;overflow-x:auto;padding:2px}
+.wl-media__thumb{border:2px solid transparent;border-radius:8px;padding:0;background:none;cursor:pointer;flex:0 0 64px}.wl-media__thumb img{width:64px;height:64px;object-fit:cover;border-radius:6px}
+.wl-media__thumb[aria-current="true"]{border-color:var(--wl-accent)}
+.wl-media[data-style="stacked"] .wl-media__list{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.wl-media[data-style="single-hero"] .wl-media__list{grid-template-columns:repeat(4,1fr)}.wl-media[data-style="single-hero"] .wl-media__item:first-child{grid-column:1/-1}
+.wl-media[data-style="single-hero"] .wl-media__item:not(:first-child) img{aspect-ratio:1/1;max-height:none}
+@media(min-width:900px){.wl-media__item img{max-height:none}
+.wl-media[data-style="thumbs-left"]{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:start}.wl-media[data-style="thumbs-left"] .wl-media__thumbs{order:-1;flex-direction:column;margin:0}
+.wl-media[data-style="stacked"] .wl-media__list{grid-template-columns:1fr 1fr}.wl-media[data-style="stacked"] .wl-media__item:first-child{grid-column:1/-1}}
+/* buybox */
+.wl-buybox{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;min-width:0}.wl-buybox>*,.wl-form>*,.wl-hero__grid>*{min-width:0}.wl-form{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.wl-price{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px}
+.wl-price__current{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800;font-family:var(--wl-font-heading)}
+.wl-price__compare{opacity:.65}
+.wl-price__save{background:var(--wl-accent);color:var(--wl-bg);font-size:.8rem;font-weight:700;padding:3px 9px;border-radius:999px}
+.wl-option{border:0;padding:0;margin:0;min-width:0;max-width:100%}.wl-option legend{font-weight:700;font-size:.9rem;margin-bottom:8px;padding:0}
+.wl-option__values{display:flex;flex-wrap:wrap;gap:8px}
+.wl-option input{position:absolute;opacity:0;width:1px;height:1px}
+.wl-option label{max-width:100%;display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:2px solid color-mix(in srgb,var(--wl-text) 25%,transparent);border-radius:var(--wl-radius,8px);cursor:pointer;font-weight:600;font-size:.95rem}
+.wl-option input:checked+label{border-color:var(--wl-btn);background:var(--wl-btn);color:var(--wl-btn-text)}
+.wl-option input:focus-visible+label{outline:3px solid var(--wl-accent);outline-offset:2px}
+.wl-option label.is-unavailable{text-decoration:line-through;opacity:.55}
+.wl-buy-row{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch}
+.wl-qty{display:inline-flex;border:2px solid color-mix(in srgb,var(--wl-text) 25%,transparent);border-radius:var(--wl-radius,8px);overflow:hidden}
+.wl-qty button{width:44px;border:0;background:transparent;font-size:1.3rem;cursor:pointer;color:inherit}
+.wl-qty input{width:48px;border:0;text-align:center;font:inherit;background:transparent;color:inherit;-moz-appearance:textfield}
+.wl-qty input::-webkit-outer-spin-button,.wl-qty input::-webkit-inner-spin-button{-webkit-appearance:none}
+.wl-buy-row .wl-btn{flex:1 1 150px}.wl-btn--auto{flex:0 1 auto!important;min-width:min(220px,100%)}
+.wl-status{min-height:1.4em;font-size:.92rem;margin:0}.wl-status[data-type="error"]{color:#b42318}.wl-status[data-type="ok"]{color:#067647}
+.wl-trust-list{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.9rem}
+.wl-trust-list li::before{content:"✓";color:var(--wl-accent);font-weight:800;margin-right:6px}
+.wl-sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;align-items:center;gap:12px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--wl-bg);color:var(--wl-text);border-top:1px solid rgba(0,0,0,.12);box-shadow:0 -6px 20px rgba(0,0,0,.1)}
+.wl-sticky.is-visible{display:flex}.wl-sticky__info{flex:1;min-width:0;line-height:1.25}.wl-sticky__title{display:block;font-size:.85rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.wl-sticky__price{font-weight:800}
+.wl-sticky .wl-btn{min-height:44px;padding:0 1.2em}
+@media(min-width:900px){.wl-sticky.is-visible{display:none}}
+/* sections */
+.wl-sec-head{max-width:720px;margin-bottom:32px}.wl-align--center .wl-sec-head{margin-inline:auto}
+.wl-grid{display:grid;gap:20px}
+.wl-card{padding:24px;border-radius:calc(var(--wl-radius,8px)*1.5);border:1px solid color-mix(in srgb,var(--wl-text) 14%,transparent);background:color-mix(in srgb,var(--wl-bg) 94%,var(--wl-text))}
+.wl-layout--grid-3 .wl-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.wl-layout--cards-2 .wl-grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}.wl-layout--cards-2 .wl-card{border-left:6px solid var(--wl-accent)}
+.wl-layout--list-numbered .wl-grid{counter-reset:b;max-width:820px}.wl-layout--list-numbered .wl-card{counter-increment:b;display:grid;grid-template-columns:56px 1fr;gap:6px 16px;border:0;border-bottom:1px solid color-mix(in srgb,var(--wl-text) 18%,transparent);border-radius:0;background:transparent;padding:18px 0}
+.wl-layout--list-numbered .wl-card::before{content:counter(b,decimal-leading-zero);grid-row:span 2;font-family:var(--wl-font-heading);font-size:2rem;font-weight:800;color:var(--wl-accent)}
+.wl-layout--alternating .wl-grid{gap:0}.wl-layout--alternating .wl-card{border:0;border-radius:0;background:transparent;display:grid;gap:12px 40px;padding:28px 0;border-top:1px solid color-mix(in srgb,var(--wl-text) 16%,transparent)}
+@media(min-width:800px){.wl-layout--alternating .wl-card{grid-template-columns:1fr 2fr}.wl-layout--alternating .wl-card:nth-child(even){grid-template-columns:2fr 1fr}.wl-layout--alternating .wl-card:nth-child(even) h3{order:2;text-align:right}}
+.wl-card img{border-radius:var(--wl-radius,8px);margin-bottom:12px}.wl-card h3{margin-bottom:.35em}.wl-card p{margin:0}
+.wl-split{display:grid;gap:28px;align-items:center}
+@media(min-width:800px){.wl-split{grid-template-columns:1fr 1fr;gap:56px}.wl-layout--image-right .wl-split__media{order:2}}
+.wl-split__media img{border-radius:calc(var(--wl-radius,8px)*1.5);width:100%;object-fit:cover;aspect-ratio:4/5}
+.wl-layout--quote-centered .wl-split{display:block;max-width:820px;margin:0 auto;text-align:center}.wl-layout--quote-centered .wl-split__media{display:none}.wl-layout--quote-centered .wl-split__text{font-size:1.25em}
+.wl-gallery{display:grid;gap:14px}.wl-gallery img{width:100%;height:100%;object-fit:cover;border-radius:calc(var(--wl-radius,8px)*1.2);aspect-ratio:1/1}
+.wl-layout--mosaic .wl-gallery{grid-template-columns:repeat(2,1fr)}.wl-layout--mosaic .wl-gallery figure:first-child{grid-column:1/-1}.wl-layout--mosaic .wl-gallery figure:first-child img{aspect-ratio:16/9}
+@media(min-width:800px){.wl-layout--mosaic .wl-gallery{grid-template-columns:repeat(4,1fr)}.wl-layout--mosaic .wl-gallery figure:first-child{grid-column:span 2;grid-row:span 2}.wl-layout--mosaic .wl-gallery figure:first-child img{aspect-ratio:1/1}}
+.wl-layout--strip .wl-gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.wl-layout--strip .wl-gallery figure{flex:0 0 min(78vw,360px);scroll-snap-align:start}
+.wl-layout--grid-2 .wl-gallery{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.wl-gallery figure{margin:0}.wl-gallery figcaption{font-size:.85rem;opacity:.75;margin-top:6px}
+.wl-table{width:100%;border-collapse:collapse;font-size:.97rem}.wl-table th,.wl-table td{text-align:left;padding:12px 14px;border-bottom:1px solid color-mix(in srgb,var(--wl-text) 16%,transparent);vertical-align:top}.wl-table th{font-weight:700;width:34%}
+.wl-table-scroll{overflow-x:auto}.wl-layout--cards .wl-table{display:block}
+.wl-specs-cards{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.wl-specs-cards dt{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;opacity:.7}.wl-specs-cards dd{margin:4px 0 0;font-weight:700;font-size:1.1rem}
+.wl-rating-summary{display:flex;align-items:center;gap:10px;font-weight:700;margin-bottom:20px}.wl-stars{color:var(--wl-accent);letter-spacing:2px}
+.wl-layout--cards .wl-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.wl-layout--quote-wall .wl-grid{display:block;columns:2 280px;column-gap:20px}.wl-layout--quote-wall .wl-card{break-inside:avoid;margin-bottom:20px}
+.wl-layout--single-featured .wl-card:first-child{font-size:1.25em;padding:36px}.wl-layout--single-featured .wl-grid{max-width:820px}
+.wl-review__author{font-weight:700;margin:12px 0 0;font-size:.9rem}
+.wl-faq details{border-bottom:1px solid color-mix(in srgb,var(--wl-text) 20%,transparent);padding:4px 0}.wl-faq summary{cursor:pointer;font-weight:700;padding:16px 28px 16px 0;list-style:none;position:relative}
+.wl-faq summary::-webkit-details-marker{display:none}.wl-faq summary::after{content:"+";position:absolute;right:4px;top:12px;font-size:1.5rem;color:var(--wl-accent)}.wl-faq details[open] summary::after{content:"–"}
+.wl-faq__a{padding:0 0 16px;max-width:70ch}
+@media(min-width:900px){.wl-layout--two-column .wl-faq{columns:2;column-gap:56px}.wl-layout--two-column details{break-inside:avoid}}
+.wl-layout--bar .wl-trust-list{justify-content:center;font-size:1rem}.wl-layout--grid .wl-trust-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.wl-layout--grid .wl-trust-list li{padding:14px;border:1px solid color-mix(in srgb,var(--wl-text) 16%,transparent);border-radius:var(--wl-radius,8px)}
+.wl-layout--columns .wl-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.wl-layout--stacked .wl-grid{max-width:760px}
+.wl-offer{display:grid;gap:24px;align-items:center}
+@media(min-width:800px){.wl-layout--panel-split .wl-offer{grid-template-columns:1fr 1fr}}
+.wl-offer__price{font-size:clamp(2.2rem,7vw,4rem);font-weight:800;font-family:var(--wl-font-heading);line-height:1}.wl-offer__compare{text-decoration:line-through;opacity:.6;font-size:1.3rem;margin-left:10px}
+.wl-offer__panel{border:2px solid var(--wl-accent);border-radius:calc(var(--wl-radius,8px)*1.5);padding:28px}
+.wl-layout--banner .wl-offer{text-align:center;justify-items:center}
+.wl-cta{display:grid;gap:20px;justify-items:center;text-align:center}
+@media(min-width:800px){.wl-layout--split .wl-cta{grid-template-columns:1.4fr 1fr;justify-items:start;text-align:left;align-items:center}}
+.wl-notice{font-size:.9rem;opacity:.85;border-left:4px solid var(--wl-accent);padding:8px 14px;margin-bottom:20px}
+.wl-preview-ribbon{background:#111;color:#fff;font:600 13px/1.4 system-ui,sans-serif;padding:8px 14px;text-align:center}
+.wl-preview-ribbon a{color:#9ad}
+.wl-visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(prefers-reduced-motion:reduce){.wl-btn{transition:none}}
+`;
+
+export const WL_JS = `/* Wishluck product form enhancement (~2KB). Progressive: without JS the form posts to /cart/add with the selected variant id. */
+(function () {
+  function init(root) {
+    var dataEl = root.querySelector('[data-wl-variants]');
+    var form = root.querySelector('form');
+    if (!dataEl || !form) return;
+    var variants = JSON.parse(dataEl.textContent);
+    var idInput = form.querySelector('[data-wl-variant-id]');
+    var priceEl = root.querySelector('[data-wl-price]');
+    var compareEl = root.querySelector('[data-wl-compare]');
+    var saveEl = root.querySelector('[data-wl-save]');
+    var status = root.querySelector('[data-wl-status]');
+    var qty = form.querySelector('input[name="quantity"]');
+    var formId = form.getAttribute('id'); /* NB: form.id is shadowed by the hidden input[name=id] */
+    var buttons = document.querySelectorAll('[data-wl-atc][form="' + formId + '"], #' + formId + ' [data-wl-atc]');
+    var sticky = root.querySelector('[data-wl-sticky]');
+    var optionSets = [].slice.call(root.querySelectorAll('.wl-option'));
+    var label = (buttons[0] && buttons[0].getAttribute('data-label')) || 'Add to cart';
+    function selected() {
+      return optionSets.map(function (fs) { var c = fs.querySelector('input:checked'); return c ? c.value : null; });
+    }
+    function match(opts) {
+      return variants.find(function (v) { return v.options.every(function (o, i) { return opts[i] == null || o === opts[i]; }); });
+    }
+    function refreshAvailability() {
+      var cur = selected();
+      optionSets.forEach(function (fs, idx) {
+        [].slice.call(fs.querySelectorAll('input')).forEach(function (input) {
+          var test = cur.slice(); test[idx] = input.value;
+          var v = match(test);
+          var l = fs.querySelector('label[for="' + input.id + '"]');
+          if (l) l.classList.toggle('is-unavailable', !v || !v.available);
+        });
+      });
+    }
+    function update() {
+      var v = match(selected());
+      if (!v) { setStatus('This combination is unavailable.', 'error'); buttons.forEach(function (b) { b.disabled = true; }); return; }
+      idInput.value = v.id;
+      if (priceEl) priceEl.textContent = v.price;
+      if (compareEl) { compareEl.textContent = v.compare; compareEl.hidden = !v.onSale; }
+      if (saveEl) { saveEl.textContent = v.save ? 'Save ' + v.save + '%' : ''; saveEl.hidden = !v.onSale; }
+      buttons.forEach(function (b) {
+        b.disabled = !v.available;
+        var s = b.querySelector('[data-wl-atc-label]'); if (s) s.textContent = v.available ? label : 'Sold out';
+      });
+      if (sticky) { var sp = sticky.querySelector('[data-wl-sticky-price]'); if (sp) sp.textContent = v.price; }
+      setStatus(v.available ? '' : 'This variant is sold out.', v.available ? '' : 'error');
+      refreshAvailability();
+      try { var u = new URL(location.href); u.searchParams.set('variant', v.id); history.replaceState(null, '', u); } catch (e) {}
+    }
+    function setStatus(msg, type) { if (status) { status.textContent = msg; status.setAttribute('data-type', type || ''); } }
+    optionSets.forEach(function (fs) { fs.addEventListener('change', update); });
+    root.querySelectorAll('[data-wl-qty]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var n = parseInt(qty.value, 10) || 1; n += parseInt(b.getAttribute('data-wl-qty'), 10); qty.value = Math.max(1, n);
+      });
+    });
+    form.addEventListener('submit', function (e) {
+      var url = form.getAttribute('data-cart-add-url');
+      if (!url || !window.fetch) return;
+      var cross = false;
+      try { cross = new URL(url, location.href).origin !== location.origin; } catch (err) {}
+      var q = Math.max(1, parseInt(qty ? qty.value : '1', 10) || 1);
+      if (cross) {
+        /* Studio preview only: the theme is not served from the store domain, so use Shopify's cart permalink. */
+        e.preventDefault();
+        var o = new URL(url, location.href).origin;
+        window.open(o + '/cart/' + idInput.value + ':' + q, '_blank', 'noopener');
+        setStatus('Preview mode: opened the source store cart with this variant.', 'ok');
+        return;
+      }
+      e.preventDefault();
+      buttons.forEach(function (b) { b.disabled = true; b.setAttribute('aria-busy', 'true'); });
+      setStatus('Adding…', '');
+      fetch(url, { method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(form) })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
+        .then(function (res) {
+          if (!res.ok) throw new Error(res.body.description || res.body.message || 'Could not add to cart.');
+          setStatus('Added to cart.', 'ok');
+          document.dispatchEvent(new CustomEvent('wl:cart-added', { detail: res.body }));
+          var cartLink = root.querySelector('[data-wl-cart-link]'); if (cartLink) cartLink.hidden = false;
+        })
+        .catch(function (err) { setStatus(err.message, 'error'); })
+        .then(function () { buttons.forEach(function (b) { b.removeAttribute('aria-busy'); }); update(); });
+    });
+    if (sticky) {
+      /* Show the sticky bar whenever the inline button is not FULLY in the viewport, so one add-to-cart control is always reachable. */
+      var main = form.querySelector('[data-wl-atc]');
+      var raf = 0;
+      var check = function () {
+        raf = 0;
+        var r = main.getBoundingClientRect();
+        var fully = r.top >= 0 && r.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+        sticky.classList.toggle('is-visible', !fully);
+      };
+      var queue = function () { if (!raf) raf = requestAnimationFrame(check); };
+      window.addEventListener('scroll', queue, { passive: true });
+      window.addEventListener('resize', queue);
+      window.addEventListener('load', queue);
+      document.addEventListener('wl:layout', queue);
+      setTimeout(queue, 400);
+      check();
+    }
+    refreshAvailability();
+  }
+  function thumbs() {
+    document.querySelectorAll('[data-wl-thumb]').forEach(function (t) {
+      t.addEventListener('click', function () {
+        var i = t.getAttribute('data-wl-thumb'); var scope = t.closest('.wl-media');
+        scope.querySelectorAll('.wl-media__item').forEach(function (li) { li.classList.toggle('is-active', li.getAttribute('data-i') === i); });
+        scope.querySelectorAll('[data-wl-thumb]').forEach(function (x) { x.setAttribute('aria-current', String(x === t)); });
+      });
+    });
+  }
+  function boot() { document.querySelectorAll('[data-wl-product]').forEach(init); thumbs(); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
+})();
+`;
+
+export const WL_CSS_PATCH = `
+.wl-hero__bar .wl-stars{color:inherit}
+.wl-card blockquote{margin:0}
+.wl-cart-link{font-weight:700}
+`;

@@ -1,0 +1,65 @@
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign form_id = 'wl-form-' | append: section.id
+  assign s = section.settings
+  assign cart_add_url = routes.cart_add_url | append: '.js'
+  assign on_sale = false
+  if current_variant.compare_at_price > current_variant.price
+    assign on_sale = true
+    assign save_pct = current_variant.compare_at_price | minus: current_variant.price | times: 100 | divided_by: current_variant.compare_at_price
+  endif
+  assign btn_label = s.button_label | default: 'Add to cart'
+-%}
+<div class="wl-buybox" data-wl-product>
+  <script type="application/json" data-wl-variants>
+    [{%- for v in product.variants -%}{"id":{{ v.id }},"available":{{ v.available | json }},"price":{{ v.price | money | json }},"compare":{% if v.compare_at_price > v.price %}{{ v.compare_at_price | money | json }}{% else %}""{% endif %},"onSale":{% if v.compare_at_price > v.price %}true{% else %}false{% endif %},"save":{% if v.compare_at_price > v.price %}{{ v.compare_at_price | minus: v.price | times: 100 | divided_by: v.compare_at_price }}{% else %}0{% endif %},"options":{{ v.options | json }}}{% unless forloop.last %},{% endunless %}{%- endfor -%}]
+  </script>
+  <div class="wl-price">
+    <span class="wl-price__current" data-wl-price>{{ current_variant.price | money }}</span>
+    <s class="wl-price__compare" data-wl-compare{% unless on_sale %} hidden{% endunless %}>{% if on_sale %}{{ current_variant.compare_at_price | money }}{% endif %}</s>
+    <span class="wl-price__save" data-wl-save{% unless on_sale %} hidden{% endunless %}>{% if on_sale %}Save {{ save_pct }}%{% endif %}</span>
+  </div>
+  {%- form 'product', product, id: form_id, class: 'wl-form wl-buybox', novalidate: 'novalidate', data-cart-add-url: cart_add_url -%}
+    <input type="hidden" name="id" value="{{ current_variant.id }}" data-wl-variant-id>
+    {%- unless product.has_only_default_variant -%}
+      {%- for option in product.options_with_values -%}
+        {%- assign oi = forloop.index -%}
+        <fieldset class="wl-option">
+          <legend>{{ option.name | escape }}</legend>
+          <div class="wl-option__values">
+            {%- for value in option.values -%}
+              {%- assign oid = form_id | append: '-' | append: oi | append: '-' | append: forloop.index -%}
+              <input type="radio" id="{{ oid }}" name="wl-option-{{ oi }}" value="{{ value | escape }}"{% if option.selected_value == value %} checked{% endif %}>
+              <label for="{{ oid }}">{{ value | escape }}</label>
+            {%- endfor -%}
+          </div>
+        </fieldset>
+      {%- endfor -%}
+    {%- endunless -%}
+    <div class="wl-buy-row">
+      {%- if s.show_quantity -%}
+        <div class="wl-qty" role="group" aria-label="Quantity">
+          <button type="button" data-wl-qty="-1" aria-label="Decrease quantity">&minus;</button>
+          <input type="number" name="quantity" value="1" min="1" inputmode="numeric" aria-label="Quantity">
+          <button type="button" data-wl-qty="1" aria-label="Increase quantity">+</button>
+        </div>
+      {%- else -%}
+        <input type="hidden" name="quantity" value="1">
+      {%- endif -%}
+      <button type="submit" name="add" class="wl-btn{% if s.button_width == 'auto' %} wl-btn--auto{% endif %}" data-wl-atc data-label="{{ btn_label | escape }}"{% unless current_variant.available %} disabled{% endunless %}>
+        <span data-wl-atc-label>{% if current_variant.available %}{{ btn_label | escape }}{% else %}Sold out{% endif %}</span>
+      </button>
+    </div>
+    <p class="wl-status" role="status" aria-live="polite" data-wl-status></p>
+    <a class="wl-cart-link" href="{{ routes.cart_url }}" data-wl-cart-link hidden>View cart</a>
+  {%- endform -%}
+  <div class="wl-sticky" data-wl-sticky role="region" aria-label="Quick add to cart">
+    <div class="wl-sticky__info">
+      <span class="wl-sticky__title">{{ product.title | escape }}</span>
+      <span class="wl-sticky__price" data-wl-sticky-price>{{ current_variant.price | money }}</span>
+    </div>
+    <button type="submit" form="{{ form_id }}" class="wl-btn" data-wl-atc data-label="{{ btn_label | escape }}"{% unless current_variant.available %} disabled{% endunless %}>
+      <span data-wl-atc-label>{% if current_variant.available %}{{ btn_label | escape }}{% else %}Sold out{% endif %}</span>
+    </button>
+  </div>
+</div>

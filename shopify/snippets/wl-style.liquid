@@ -1,0 +1,23 @@
+{%- liquid
+  assign hf = section.settings.heading_font
+  assign bf = section.settings.body_font
+-%}
+{%- style -%}
+  {{ hf | font_face: font_display: 'swap' }}
+  {{ bf | font_face: font_display: 'swap' }}
+  #shopify-section-{{ section.id }} {
+    --wl-bg: {{ section.settings.bg_color }};
+    --wl-text: {{ section.settings.text_color }};
+    --wl-accent: {{ section.settings.accent_color }};
+    --wl-btn: {{ section.settings.button_color }};
+    --wl-btn-text: {{ section.settings.button_text_color }};
+    --wl-font-heading: {{ hf.family }}, {{ hf.fallback_families }};
+    --wl-font-body: {{ bf.family }}, {{ bf.fallback_families }};
+    --wl-hs: {{ section.settings.heading_size }}px;
+    --wl-hweight: {{ section.settings.heading_weight }};
+    --wl-case: {{ section.settings.heading_case }};
+    --wl-pt: {{ section.settings.padding_top }}px;
+    --wl-pb: {{ section.settings.padding_bottom }}px;
+    --wl-radius: {{ section.settings.button_radius }}px;
+  }
+{%- endstyle -%}
